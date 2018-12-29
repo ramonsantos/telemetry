@@ -1,11 +1,12 @@
 package io.github.ramonsantos.telemetry
 
-import org.springframework.boot.SpringApplication
 import org.springframework.boot.autoconfigure.SpringBootApplication
+import org.springframework.boot.runApplication
 
 @SpringBootApplication
-class Application
+class TelemetryApplication
 
 fun main(args: Array<String>) {
-    SpringApplication.run(Application::class.java, *args)
+	runApplication<TelemetryApplication>(*args)
 }
+
